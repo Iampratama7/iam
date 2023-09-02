@@ -1,25 +1,23 @@
-package IpemarohilJakarta;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Images;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
  * @author Users001
  */
 public class koneksiprint {
-
-   public static Connection getConnection() {
+     public static Connection getConnection() {
         Connection connection = null;
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/db_ipemarohil_jakarta"; //ganti dengan database mu
+        String url = "jdbc:mysql://localhost:3306/pkh"; //ganti dengan database mu
         String user = "root";
         String password = "";
         if (connection == null) {
@@ -33,5 +31,4 @@ public class koneksiprint {
         }
         return connection;
     }     
-    
 }
